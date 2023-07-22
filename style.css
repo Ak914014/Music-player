@@ -1,0 +1,577 @@
+/* back color for body  */
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+/*  creating a variable for backgorung color  */
+:root {
+
+    --backgorungColor: rgb(21, 20, 20);
+
+}
+
+/* i'm creating content width 90%  */
+#container {
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+/* this class is for header Music text */
+.text {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    color: rgb(222, 210, 210);
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.textG {
+    color: rgb(200, 162, 67);
+    font-weight: 400;
+    text-decoration: underline
+}
+
+/* text for song type name  */
+.Sngtext {
+    position: absolute;
+    left: 110px;
+    color: rgb(222, 210, 210);
+    font-size: x-large;
+}
+
+/* header section */
+.header-body {
+
+    display: inline-block;
+    height: 100;
+    position: relative;
+    width: 100%;
+    background-color: var(--backgorungColor);
+}
+
+.logo-img img {
+    height: 70px;
+    margin-left: 4px;
+    margin-top: 4px;
+    border-radius: 40%;
+    animation: rotation ease-in-out 3s infinite alternate;
+
+}
+
+@keyframes rotation {
+
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+#search input {
+    width: 28%;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    left: 60%;
+    border-radius: 15px 15px 15px 15px;
+    border: none;
+    background-color: rgb(41, 41, 43);
+}
+
+
+#search #mic {
+    position: absolute;
+    top: 30px;
+    left: 85%;
+}
+
+#search #se {
+    position: absolute;
+    top: 30px;
+    left: 61%;
+}
+
+.profile-img img {
+
+    position: absolute;
+    left: 95%;
+    top: 5px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.bellIcon {
+    position: absolute;
+    left: 90%;
+    top: 30px;
+    font-size: large;
+    color: white;
+
+}
+
+
+/* ________________________  music suggestion box ____________________________ */
+
+#m-suggestion {
+
+    width: 75%;
+    background-color: var(--backgorungColor);
+    height: 400px;
+    position: relative;
+
+}
+
+
+.box-hover {
+    width: 25%;
+    height: 260px;
+    position: absolute;
+
+}
+
+.box-hover a img {
+
+    width: 80%;
+    height: 220px;
+    position: absolute;
+    left: 10%;
+    top: 7%;
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+#box1 {
+
+    top: 15%;
+    left: 5%;
+    background-image: url(img/suggestion-img1.jpg);
+
+}
+
+#box2 {
+
+    top: 15%;
+    left: 38%;
+    background-image: url(img/suggestion-img2.jpg);
+
+}
+
+#box3 {
+
+    top: 15%;
+    left: 70%;
+    background-image: url(img/suggestion-img3.jpg);
+
+}
+
+.box-hover a img:hover {
+
+    transform: translate(20px);
+    transform: scale(1.3);
+}
+
+/*_____________________ letest release songs list ________________ */
+
+#letest-release {
+
+    height: 500px;
+    width: 75%;
+    background-color: var(--backgorungColor);
+    /* background-color: black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.l-box {
+
+    height: 120px;
+    width: 30%;
+    position: relative;
+    margin-top: 90px;
+    border-radius: 30px;
+}
+
+.l-box img:hover {
+
+    transform: scale(1.3);
+
+}
+
+.l-box img {
+    width: 35%;
+    height: 90%;
+    border-radius: 10%;
+    transition: all 01s ease-in-out;
+}
+
+.l-box img {
+    position: absolute;
+    top: 9%;
+    left: 10%;
+
+}
+
+.playButton {
+
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    color: aliceblue;
+    opacity: 0;
+    font-size: xxx-large;
+    transition: all 0.5s ease-in-out;
+}
+
+.playButton:hover {
+
+    opacity: 0.5;
+}
+
+/* popluer-artist */
+
+#popluer-artist {
+
+    height: 300px;
+    width: 75%;
+    background-color: var(--backgorungColor);
+
+}
+
+.popContainer {
+
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 50px;
+
+}
+
+#popluer-artistsContainer {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.popBox {
+    height: 250px;
+    width: 15%;
+}
+
+.pop1 img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.pop1 img:hover {
+
+    transform: scale(1.5, 1.5);
+}
+
+/* ____________type of music _________________ */
+
+
+#typeOf-m {
+
+    height: 300px;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* background-color: aliceblue; */
+
+}
+
+.musicType {
+
+    height: 270px;
+    width: 270px;
+    margin-top: 2%;
+    background-color: rgb(186, 186, 196);
+    position: relative;
+    border-radius: 17px;
+    margin-top: 1.5%;
+    margin-left: 5px;
+    box-shadow: 5px 15px 50px 0px rgb(21, 20, 20);
+    transition: all ease-in 0.5s;
+
+
+}
+
+.musicType:hover {
+
+    background-color: rgb(33, 32, 32);
+
+
+}
+
+.musicType img {
+
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    transition: all ease-in-out 0.5s;
+    position: absolute;
+    left: 4%;
+    top: 3.5%;
+
+}
+
+.musicType img:hover {
+
+    left: 13%;
+    top: 15%;
+    height: 200px;
+    width: 200px;
+}
+
+/* --------------------  English Songs----------------------------------- */
+
+
+#englishSongs {
+
+    margin-top: 3%;
+    height: 300px;
+    width: 75%;
+    position: relative;
+
+
+
+}
+
+#SongsBox {
+
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+
+    margin-top: 15px;
+}
+
+.SongBox {
+
+    height: 250px;
+    width: 20%;
+    margin-left: 1%;
+    background-color: rgb(29, 28, 28);
+    border-radius: 5px;
+}
+
+.SongBox:hover {
+
+    background-color: rgb(60, 60, 60);
+
+}
+
+.sImg img {
+    height: 165px;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border-radius: 5px;
+
+}
+
+.sImg2 {
+
+    margin-top: -85%;
+    margin-left: 3%;
+}
+
+.sImg2 img {
+    height: 80%;
+    width: 80%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.sImg2 img:hover {
+
+    opacity: 1;
+}
+
+
+/* Singer name and song name text for lnaguage based song  */
+
+.Goldtext {
+
+    color: rgb(200, 162, 67);
+    text-decoration: underline;
+    font-size: medium;
+    opacity: 0.8;
+    margin-top: 1%;
+    margin-left: 15%;
+}
+
+.whiteText {
+    margin-left: 15%;
+    margin-top: 5%;
+    top: 75%;
+    color: antiquewhite;
+    font-size: large;
+
+}
+
+/*------------ hindi songs----------------- */
+#Hindi-panjabi {
+
+    margin-top: 3%;
+    height: 300px;
+    width: 75%;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+/* ==================Aside section========================== */
+#asideSection {
+
+    position: fixed;
+    left: 74%;
+    top: 18.5%;
+    width: 21%;
+    height: 600px;
+
+
+}
+
+#yourFav {
+    width: 100%;
+    border-radius: 7px;
+    height: 100%;
+    background-color: rgb(29, 28, 28);
+}
+
+.FMlogo img {
+    height: 50px;
+    width: 50px;
+}
+
+.FMimg {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 95%;
+    height: 70px;
+}
+
+.FMimg:hover {
+
+    background-color: rgb(62, 60, 60);
+}
+
+.fmtext {
+
+    margin-top: -18%;
+    margin-left: 30%;
+    font-size: large;
+    color: antiquewhite;
+}
+
+.FMimg img {
+
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px rgb(35, 34, 34);
+
+}
+
+/* music play section */
+
+
+#MudichPlay {
+
+    height: 100px;
+    width: 71.5%;
+    border-radius: 7px;
+    position: fixed;
+    left: 1%;
+    top: 87%;
+    opacity: 0.9;
+    background-color: rgb(2, 2, 2);
+}
+
+#MudichPlay img {
+
+    height: 80px;
+    width: 80px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#MudichPlay audio {
+
+    height: 50px;
+    width: 500px;
+    border-radius: 15px;
+    margin-left: 30%;
+    margin-top: -4%;
+
+}
+
+.Atext {
+
+    margin-top: -6%;
+    margin-left: 10%;
+    font-size: large;
+    color: antiquewhite;
+}
+
+.audio-control {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+audio {
+    width: 300px;
+    background-color: #201e1e;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    width: 80px;
+    height: 6px;
+    border-radius: 3px;
+}
+
+audio::-webkit-media-controls-volume-slider-thumb {
+    width: 14px;
+    height: 14px;
+    background-color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+audio::-webkit-media-controls-volume-slider::-webkit-slider-runnable-track {
+    background-color: #e4d7d7;
+    height: 6px;
+}
+
+audio::-webkit-media-controls-volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -4px;
+}
+
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-pan {
+    display: none;
+}
